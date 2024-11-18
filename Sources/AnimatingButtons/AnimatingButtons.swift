@@ -40,6 +40,7 @@ public struct AnimatingFavoriteButton: View {
     public var body: some View {
         Button (action: {
             animateButton()
+            action()
         }, label: {
             ZStack {
                 SplashView()
