@@ -3,7 +3,7 @@ import SwiftUI
 @available(iOS 18.0, macOS 14.0, *)
 struct SplashView: View {
     @State private var innerGap = true
-    private let streamBlue = Color(#colorLiteral(red: 0, green: 0.3725490196, blue: 1, alpha: 1))
+//    private let streamBlue = Color(#colorLiteral(red: 0, green: 0.3725490196, blue: 1, alpha: 1))
 
     var body: some View {
         ZStack {
