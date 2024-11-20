@@ -22,6 +22,7 @@ public struct AnimatingFavoriteButton: View {
 
             if heartCount % 2 == 1 {
                 isAnimating.toggle()
+                action()
             }
         }
 
@@ -40,7 +41,6 @@ public struct AnimatingFavoriteButton: View {
     public var body: some View {
         Button (action: {
             animateButton()
-            action()
         }, label: {
             ZStack {
                 SplashView()
