@@ -57,6 +57,11 @@ public struct AnimatingFavoriteButton: View {
         self.action = action
     }
 
+    // MARK: - State Accessor Functions
+    public func readState() -> Bool {
+        return isLoved
+    }
+
     // MARK: - Body
     public var body: some View {
         Button (action: {
